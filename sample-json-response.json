@@ -1,92 +1,131 @@
-[
-	{
+[{
 		"testId": "IOECS3DS0001",
 		"qNo": 1,
 		"question": "A for ?",
-		"rAns": "Apple",
-		"oAns1": "Orange",
-		"oAns2": "Banana",
-		"oAns3": "Carrot"
+		"ans_options": [
+			"Apple",
+			"Orange",
+			"Banana",
+			"Carrot"
+		],
+		"mark_val": "5.5"
 	},
 	{
 		"testId": "IOECS3DS0001",
 		"qNo": 2,
 		"question": "B for ?",
-		"rAns": "Banana",
-		"oAns1": "Pear",
-		"oAns2": "Mango",
-		"oAns3": "Water Melon"
+		"ans_options": [
+			"Banana",
+			"Pear",
+			"Mango",
+			"Water Melon"
+		],
+		"mark_val": "5.5"
 	},
 	{
 		"testId": "IOECS3DS0001",
 		"qNo": 3,
 		"question": "C for ?",
-		"rAns": "Carrot",
-		"oAns1": "Dates",
-		"oAns2": "Mango",
-		"oAns3": "Melon"
+		"ans_options": [
+			"Carrot",
+			"Dates",
+			"Mango",
+			"Melon"
+		],
+		"mark_val": "5.5"
 	},
 	{
 		"testId": "IOECS3DS0001",
 		"qNo": 4,
 		"question": "D for ?",
-		"rAns": "Dates",
-		"oAns1": "Apple",
-		"oAns2": "Kiwi",
-		"oAns3": "Lemon"
+		"ans_options": [
+			"Dates",
+			"Apple",
+			"Kiwi",
+			"Lemon"
+		],
+		"mark_val": "5.5"
 	},
 	{
 		"testId": "IOECS3DS0001",
 		"qNo": 5,
 		"question": "G for ?",
-		"rAns": "Guava",
-		"oAns1": "Mango",
-		"oAns2": "Dates",
-		"oAns3": "Banana"
+		"ans_options": [
+			"Guava",
+			"Mango",
+			"Dates",
+			"Banana"
+		],
+		"mark_val": "5.5"
 	},
 	{
 		"testId": "IOECS3DS0001",
 		"qNo": 6,
 		"question": "K for ?",
-		"rAns": "Kiwi",
-		"oAns1": "Carrot",
-		"oAns2": "Water Melon",
-		"oAns3": "Mango"
+		"ans_options": [
+			"Kiwi",
+			"Carrot",
+			"Water Melon",
+			"Mango"
+		],
+		"mark_val": "5.5"
 	},
 	{
 		"testId": "IOECS3DS0001",
 		"qNo": 7,
 		"question": "L for ?",
-		"rAns": "Lemon",
-		"oAns1": "Banana",
-		"oAns2": "Pear",
-		"oAns3": "Kiwi"
+		"ans_options": [
+			"Lemon",
+			"Banana",
+			"Pear",
+			"Kiwi"
+		],
+		"mark_val": "5.5"
 	},
 	{
 		"testId": "IOECS3DS0001",
 		"qNo": 8,
 		"question": "M for ?",
-		"rAns": "Mango",
-		"oAns1": "Apple",
-		"oAns2": "Kiwi",
-		"oAns3": "Melon"
+		"ans_options": [
+			"Mango",
+			"Apple",
+			"Kiwi",
+			"Melon"
+		],
+		"mark_val": "5.5"
 	},
 	{
 		"testId": "IOECS3DS0001",
 		"qNo": 9,
 		"question": "P for ?",
-		"rAns": "Pineapple",
-		"oAns1": "Kiwi",
-		"oAns2": "Guava",
-		"oAns3": "Water Melon"
+		"ans_options": [
+			"Pineapple",
+			"Kiwi",
+			"Guava",
+			"Water Melon"
+		],
+		"mark_val": "5.5"
 	},
 	{
 		"testId": "IOECS3DS0001",
 		"qNo": 10,
 		"question": "R for ?",
-		"rAns": "Raspberry",
-		"oAns1": "Strawberry",
-		"oAns2": "Mango",
-		"oAns3": "Kiwi"
+		"ans_options": [
+			"Raspberry",
+			"Strawberry",
+			"Mango",
+			"Kiwi"
+		],
+		"mark_val": "5.5"
 	}
 ]
+
+
+[{
+	"testId": "IOECS3DS0001",
+	"testSet": "Set 1",
+	"testName": "Engineering Drawing Sem 1",
+	"duration_secs": 10800,
+	"linking_fk": "...",
+	"other_details": "..."
+}]

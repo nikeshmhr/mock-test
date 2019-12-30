@@ -1,31 +1,41 @@
 import React from "react";
 
 class Mcq extends React.Component {
+	changed(e, q) {
+		let answer = {
+			value: e.target.value,
+			question: q,
+			isChecked: q.ansType === "multi" ? e.target.checked : false
+		};
+
+		this.props.onAnswered(answer);
+	}
+
 	render() {
+		const { question: q } = this.props;
 		return (
 			<>
 				<div>
-					<h4>{"1"}. A for ____?</h4>
+					<h4>{`${q.qNo}. ${q.question}`}</h4>
 					<ol type="A">
-						<li>
-							<input type="radio" name="options" id="1" />
-							<label htmlFor="1">Apple</label>
-						</li>
-						<li>
-							<input type="radio" name="options" id="2" />
-							<label htmlFor="2">Ball</label>
-						</li>
-						<li>
-							<input type="radio" name="options" id="3" />
-							<label htmlFor="3">Cat</label>
-						</li>
-						<li>
-							<input type="radio" name="options" id="4" />
-							<label htmlFor="4">Dog</label>
-						</li>
+						{q.ans_options.map((opt, index) => (
+							<li key={opt}>
+								<input
+									type="radio"
+									name={`options${q.qNo}`}
+									id={`option${q.qNo}${index}`}
+									value={opt}
+									onChange={e => this.changed(e, q)}
+								/>
+								&nbsp;
+								<label htmlFor={`option${q.qNo}${index}`}>
+									{opt}
+								</label>
+							</li>
+						))}
 					</ol>
 				</div>
-				<div>
+				{/* <div>
 					<h4>{"2"}. B for ____?</h4>
 					<ol type="B">
 						<li>
@@ -45,7 +55,7 @@ class Mcq extends React.Component {
 							<label htmlFor="o4">Dog</label>
 						</li>
 					</ol>
-				</div>
+				</div> */}
 			</>
 		);
 	}
